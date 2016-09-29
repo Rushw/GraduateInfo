@@ -1,0 +1,11 @@
+start python seustu.py 04.txt 213040001 213040117 
+start python seustu.py 05.txt 213050001 213053956
+start python seustu.py 06.txt 213060001 213063977
+start python seustu.py 07.txt 213070001 213073971
+start python seustu.py 08.txt 213080001 213083840
+start python seustu.py 09.txt 213090001 213093828
+start python seustu.py 10.txt 213100001 213104002
+start python seustu.py 11.txt 213110001 213114001
+start python seustu.py 12.txt 213120001 213124051
+start python seustu.py 13.txt 213130001 213124500
+start python seustu.py 14.txt 213140001 213124500
