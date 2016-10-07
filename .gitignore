@@ -87,7 +87,16 @@ ENV/
 
 # Rope project settings
 .ropeproject
+<<<<<<< HEAD
 *.iml
 *.xml
+=======
+.idea/GraduateInfo.iml
+.idea/encodings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/workspace.xml
+>>>>>>> dev
 *.xlsx
 *.zip
