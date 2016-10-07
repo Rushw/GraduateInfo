@@ -77,7 +77,7 @@ class InfoExporter(object):
         return '%s%s' % (get_column_letter(col), row)
     
     def request_data(self, num, sheet, rowNumber):
-        print 'processing information for student ID %s%s' % (self.year, str(num).zfill(4))
+        print 'requesting information for student ID %s%s' % (self.year, str(num).zfill(4))
         try:
             responce = urllib2.urlopen(
                 'http://202.119.4.150/nstudent/ggxx/xsggxxinfo.aspx?xh=%s%s' % (self.year, str(num).zfill(4)),
@@ -145,7 +145,7 @@ def main():
     if not (int(args[0]) < int(args[1]) and int(args[0]) >= 0 and (2000 + int(args[1])) <= datetime.datetime.now().year):
         print 'constraint: start >= 00, end <= year-2000.'
         sys.exit(1)
-    procs = multiprocessing.Pool(processes=multiprocessing.cpu_count()*3)
+    procs = multiprocessing.Pool(int(args[1])+1-int(args[0]))
     pargs = []
     for i in range(int(args[0]), int(args[1])+1):
         year = str(i).zfill(2)
